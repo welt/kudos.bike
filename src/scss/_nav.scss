@@ -1,0 +1,44 @@
+.nav-primary {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.nav-primary>* {
+    margin-right: 2rem;
+}
+
+.nav-primary a {
+    margin-bottom: .5rem;
+}
+
+.nav-primary a,
+.nav-secondary a {
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.nav-secondary a {
+    display: inline-block;
+}
+
+@include respond('small') {
+    .nav-primary a {
+        line-height: 1;
+    }
+}
+
+.nav-secondary {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.nav-secondary h3 {
+    margin-bottom: 0;
+}
+
+.nav-secondary ul {
+    margin-top: .5rem;
+}

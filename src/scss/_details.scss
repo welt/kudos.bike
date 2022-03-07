@@ -1,0 +1,26 @@
+details {
+    background-color: $color-back;
+    border: 2px solid Black;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+details>summary {
+    font-weight: 700;
+    list-style: none;
+}
+
+details>summary>* {
+    display: inline;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details ul {
+    margin-left: -.5rem
+}

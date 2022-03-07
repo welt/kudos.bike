@@ -1,0 +1,59 @@
+.brand-logo {
+    box-sizing: content-box;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.brand-logo>div {
+    flex-basis: 60%;
+    height: 0;
+    padding: 0;
+    padding-bottom: 24%;
+    position: relative;
+}
+
+.brand-logo svg {
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@include respond('small') {
+    .brand-logo>div {
+        flex-basis: 40%;
+        padding-bottom: 16%;
+    }
+}
+
+.logos-sponsors {
+    display: flex;
+    margin: 0;
+}
+
+@include respond('small') {
+    .logos-sponsors {
+        width: 65%;
+    }
+}
+
+.logos-sponsors svg {
+    flex-basis: 50%;
+}
+
+.logos-sponsors svg:first-child {
+    margin-right: 1rem;
+}
+
+.logos-sponsors svg+svg {
+    margin-left: 1rem;
+}
+
+.logos-sponsors+p {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}

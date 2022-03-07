@@ -1,0 +1,13 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Establishment = "H"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+    buildDir = "_site"
+    exclude = [
+      '**/event/**/*',
+      '**/event/**/*.html'
+    ]
