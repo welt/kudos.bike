@@ -1,0 +1,61 @@
+@media only screen {
+
+    .dark-mode {
+
+        main:not(.hide-bg) {
+            background-color: $color-darkmode-back;
+        }
+
+        @include respond('medium') {
+            main:not(.hide-bg) {
+                padding-top: 1rem;
+                padding-right: 1rem;
+                border-radius: 0 1rem 1rem 0;
+            }
+        }
+
+        details {
+            background-color: $color-darkmode-back;
+        }
+
+        x-toggle {
+            --mode-btn-color: $color-darkmode-fore
+        }
+
+        .table-responsive {
+            --border-color: $color-darkmode-fore;
+            background-color: $color-darkmode-back;
+        }
+
+        body {
+            color: $color-darkmode-fore;
+            background-color: $color-darkmode-back;
+        }
+
+        a,
+        a:link,
+        a:visited {
+            color: $color-darkmode-fore;
+        }
+
+        .table-responsive td:first-child {
+            background-color: transparent;
+            border: 1px solid $color-darkmode-fore;
+            margin-bottom: calc(.5rem - 4px);
+        }
+
+        .event {
+            background-color: $color-darkmode-back;
+            border: 1px solid $color-darkmode-fore;
+        }
+
+        details {
+            border: 2px solid $color-darkmode-fore;
+        }
+
+        .btn-hide-columns {
+            border: 2px solid $color-darkmode-fore;
+            color: $color-darkmode-fore;
+        }
+    }
+}

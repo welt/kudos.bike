@@ -1,0 +1,143 @@
+.table-responsive {
+    --border-color: DarkGrey;
+    background-color: $color-back;
+    box-sizing: border-box;
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+table th,
+table td {
+    vertical-align: middle;
+}
+
+table caption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.table-responsive td:before {
+    display: block;
+}
+
+.table-responsive thead tr {
+    display: none;
+}
+
+.table-responsive tr {
+    margin-bottom: 1rem;
+}
+
+.table-responsive tr,
+.table-responsive td {
+    display: block;
+}
+
+.table-responsive td {
+    padding-top: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 50%;
+}
+
+.table-responsive td:first-child {
+    background-color: color($color-darkmode-fore tint(65%));
+    margin-bottom: calc(.5rem - 2px);
+}
+
+.table-responsive td:before {
+    content: attr(data-label);
+    display: inline-block;
+    margin-left: -100%;
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.table-responsive td[data-ordinal]::before {
+    content: attr(data-ordinal);
+    display: inline-block;
+    font-weight: 100;
+    text-align: left;
+    text-transform: none;
+    width: 6ch;
+}
+
+
+@include respond('medium') {
+
+    // Always show full table & no effects if there's no JS.
+
+    .js .btn-hide-columns {
+        display: block;
+    }
+
+    .js .hide-columns .js-cols {
+        display: none;
+    }
+
+    .js .table-responsive.hide-columns {
+        font-size: 1rem;
+    }
+
+    .js .table-responsive {
+        font-size: .75rem;
+    }
+
+    .js .table-responsive.hide-columns td[data-ordinal]::before {
+        display: inline-block;
+    }
+
+    .table-responsive td[data-ordinal]::before {
+        display: block;
+        margin-left: 0;
+    }
+
+    .table-responsive td:not(:first-child),
+    .table-responsive th:not(:first-child) {
+        text-align: center;
+    }
+
+    .table-responsive td,
+    .table-responsive th {
+        border: 1px solid #808080;
+        border: 1px solid var(--border-color, #808080);
+        display: table-cell;
+        min-width: 22%;
+        padding-top: .75rem;
+        padding-right: .75rem;
+        padding-bottom: .75rem;
+        padding-left: .75rem;
+    }
+
+    .table-responsive td:first-child {
+        background-color: transparent;
+        margin-bottom: unset;
+    }
+
+    .table-responsive thead th {
+        text-align: left;
+    }
+
+    .table-responsive tr,
+    .table-responsive thead tr {
+        display: table-row;
+    }
+
+    .table-responsive td:before {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.event {
+    background-color: color($color-darkmode-fore tint(65%));
+    border-radius: .75rem;
+    border: 1px solid Silver;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.event-details {
+    font-family: $font-mono;
+    margin-bottom: 2rem;
+}
+
+.event-details p {
+    margin-bottom: .25rem;
+    margin-top: .25rem;
+}
+
+.event-link {
+    white-space: pre-line;
+    word-wrap: break-word;
+}

@@ -1,0 +1,33 @@
+---
+permalink: 404.html
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if (meta.env === 'production') %}
+      <link rel="preload" href="`/css/{{ manifest['style.css'] }}" as="style">
+      <link rel="stylesheet" href="/css/{{ manifest['style.css'] }}" media="all">
+    {% else %}
+      <link rel="preload" href="`/css/style.css" as="style">
+      <link rel="stylesheet" href="/css/style.css" media="all">
+    {% endif %}
+    <meta name="color-scheme" content="dark light">
+    <title>Error 404</title>
+  </head>
+  <body class="error-404">
+    <main>
+      <h1>
+        <a title="back to homepage" href="/" id="error-message">I'm sorry son, it doesn't work like that.</a>
+      </h1>
+    </main>
+    <script>
+      var a = [
+          "I\u2019m sorry son, it doesn\u2019t work like that.", "Gels\u003F\u0021 What do you want them for\u003f", "I\u2019m sorry son, 10 more laps to go.", "You\u2019ve still got to pedal it."
+        ],
+        b = document.getElementById("error-message");
+      b && (b.textContent = a[Math.floor(Math.random() * a.length)]);
+    </script>
+  </body>
+</html>

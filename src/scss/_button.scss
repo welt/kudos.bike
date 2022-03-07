@@ -1,0 +1,18 @@
+.btn-hide-columns {
+    appearance: none;
+    background-color: transparent;
+    border-radius: .5rem;
+    border: 2px solid Black;
+    color: Black;
+    cursor: pointer;
+    display: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+x-toggle {
+    box-sizing: border-box;
+    height: 24px;
+    width: 52px;
+}

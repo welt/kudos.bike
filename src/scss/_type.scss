@@ -1,0 +1,35 @@
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+* {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.25rem;
+    hyphens: none;
+    overflow-wrap: break-word;
+}
+
+h1>*,
+h2>*,
+h3>*,
+h4>*,
+h5>*,
+h6>* {
+    font-size: inherit;
+}
+
+figure+h1 {
+    margin-bottom: 0;
+}
+
+h1+h2 {
+    margin-top: 0;
+}
