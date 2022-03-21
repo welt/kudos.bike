@@ -1,8 +1,8 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable class-methods-use-this */
-const formatPointsColumns = require('../../_lib/formatPointsColumns');
-const navSecondary = require('../../_includes/navSecondary');
-const ordinalSuffixOf = require('../../_lib/ordinalSuffixOf');
+const formatPointsColumns = require('../../../_lib/formatPointsColumns');
+const navSecondary = require('../../../_includes/navSecondary');
+const ordinalSuffixOf = require('../../../_lib/ordinalSuffixOf');
 
 class Results {
   constructor() {
@@ -11,8 +11,8 @@ class Results {
 
   get data() {
     return {
-      title: 'Kudos TT Series, 2021 women\'s leaderboard',
-      metaDescription: 'Kudos Time Trial Series, 2021 women\'s leaderboard',
+      title: 'Kudos TT Series, 2021 men\'s leaderboard',
+      metaDescription: 'Kudos Time Trial Series, 2021 men\'s leaderboard',
       styles: 'hide-bg',
     };
   }
