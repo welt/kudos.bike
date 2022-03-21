@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 const eventInfo = require('./_includes/eventInfo');
 const navSecondary = require('./_includes/navSecondary');
-const menuResults = require('./_includes/menuResults');
+// const menuResults = require('./_includes/menuResults');
 const sortBy = require('./_lib/sortBy');
 
 class Home {
@@ -23,7 +23,6 @@ class Home {
     const { events } = data;
     return `
       ${navSecondary()}
-      ${menuResults(events)}
       <h3>Events calendar</h3>
       ${this.constructor.getRaces(events)}
     `;
