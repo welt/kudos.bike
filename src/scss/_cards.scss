@@ -1,0 +1,17 @@
+.cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@include respond('medium') {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include respond('large') {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

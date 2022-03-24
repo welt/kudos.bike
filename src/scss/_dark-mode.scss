@@ -57,5 +57,11 @@
             border: 2px solid $color-darkmode-fore;
             color: $color-darkmode-fore;
         }
+
+        .card {
+            background-color: $color-darkmode-back;
+            color: $color-darkmode-fore;
+            border: 2px solid $color-darkmode-fore;
+        }
     }
 }
