@@ -1,17 +1,17 @@
 .card {
     background-color: $color-back;
-    color: $color-fore;
-    border: 2px solid $color-darkmode-fore;
-    padding: 1rem;
-    min-height: 4rem;
     border-radius: .75rem;
+    border: 2px solid $color-darkmode-fore;
+    color: $color-fore;
+    min-height: 4rem;
+    padding: 1rem;
 }
 
 .card__img {
     border-radius: 50%;
+    height: auto;
     margin-right: 1.5rem;
     max-width: 17.75rem;
-    height: auto;
 }
 
 @include respond('large') {
