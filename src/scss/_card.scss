@@ -1,0 +1,37 @@
+.card {
+    background-color: $color-back;
+    color: $color-fore;
+    border: 2px solid $color-darkmode-fore;
+    padding: 1rem;
+    min-height: 4rem;
+    border-radius: .75rem;
+}
+
+.card__img {
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    max-width: 17.75rem;
+}
+
+@include respond('large') {
+    .card__img {
+        margin-right: 0;
+    }
+}
+
+.card__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__column {
+    flex: 1;
+}
+
+.card__details-container {
+    flex: 2;
+}
+
+.card__photo {
+    flex: 1;
+}
