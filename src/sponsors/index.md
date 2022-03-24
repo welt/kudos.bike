@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kudos TT Series Rules
+title: Kudos TT Series Sponsors
 metaDescription: Kudos Time Trial Series sponsors, 2022
 styles: hide-bg
 ---
