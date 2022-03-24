@@ -25,7 +25,6 @@ class Results {
    * @returns {string}
    */
   formatPointsColumnHeaders(obj) {
-    console.log('obj ', obj);
     const { results } = obj;
     const [firstResult] = results;
     return `${this.formatPointsColumns(firstResult, true)}`;
