@@ -2,8 +2,19 @@
 
 ## Website for Bioracer Kudos TT series 2022
 
-+ [Eleventy](https://www.11ty.dev/)
+- [Eleventy](https://www.11ty.dev/)
 
-+ [Rollup](https://www.rollupjs.org/guide/en/)
+- [Rollup](https://www.rollupjs.org/guide/en/)
 
-+ [PostCSS](https://postcss.org/)
+- [PostCSS](https://postcss.org/)
+
+---
+
+### Notes
+
+- csvtojson:
+
+```bash
+cd tmp
+npx csvtojson source.csv > converted.json
+```
