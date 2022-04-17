@@ -7,13 +7,7 @@
     margin-top: 2rem;
 }
 
-@include respond('medium') {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@include respond('large') {
+@include respond('small') {
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
