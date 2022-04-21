@@ -10,7 +10,7 @@ export default class ToggleColumns {
     this.table = null;
   }
 
-  setSate() {
+  setState() {
     this.table.classList.toggle('hide-columns');
     const currentLabel = this.toggleButton.textContent;
     this.toggleButton.textContent = this.toggleButton.dataset.label;
@@ -25,7 +25,7 @@ export default class ToggleColumns {
   }
 
   bindEvents() {
-    this.toggleButton.addEventListener('click', this.setSate.bind(this));
+    this.toggleButton.addEventListener('click', this.setState.bind(this));
   }
 
   init() {
