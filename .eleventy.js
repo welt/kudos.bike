@@ -1,6 +1,4 @@
 require('dotenv').config();
-const MarkdownIt = require('markdown-it');
-const md = new MarkdownIt({ html: true, linkify: true, breaks: true });
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/images/**/*.{png,jpg,webp}');
@@ -11,11 +9,8 @@ module.exports = function (eleventyConfig) {
   if (process.env.BRANCH !== 'main') {
     eleventyConfig.addPassthroughCopy('./src/robots.txt');
   }
-  eleventyConfig.addJavaScriptFunction('parseMarkdown', async function(str) {
-    return typeof str === 'string' ? md.render(str) : '';
-  });
-  eleventyConfig.addJavaScriptFunction('lookup', function(arr, key, val) {
-    return arr.find((obj)=>obj[key] === val);
+  eleventyConfig.addJavaScriptFunction('lookup', function (arr, key, val) {
+    return arr.find((obj) => obj[key] === val);
   });
   return {
     dir: {
