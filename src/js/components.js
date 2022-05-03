@@ -1,2 +1,2 @@
 /* eslint-disable import/extensions */
-import './_components/toggleDarkMode.js';
+import './_components/index.js';

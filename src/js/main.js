@@ -1,14 +1,13 @@
 /* eslint-disable import/extensions */
-import * as a from './_modules/a';
-import * as b from './_modules/b';
 import CalendarItem from './_modules/calendarItem';
 import ToggleColumns from './_modules/toggleColumns';
+import ToggleDarkMode from './_modules/toggleDarkMode';
 
-const c = new CalendarItem();
-c.init();
+const calendarItem = new CalendarItem();
+calendarItem.init();
 
-const t = new ToggleColumns();
-t.init();
+const toggleColumns = new ToggleColumns();
+toggleColumns.init();
 
-a.hello();
-b.goodbye();
+const toggleDarkMode = new ToggleDarkMode();
+toggleDarkMode.init();
