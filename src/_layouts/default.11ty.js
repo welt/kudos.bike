@@ -30,7 +30,7 @@ class LayoutDefault {
     <body>
         ${navPrimary()}
         ${header()}
-        <main class="${data.styles ? data.styles : ''}">
+        <main id="main-content" class="${data.styles ? data.styles : ''}">
         ${data.content}
         </main>
         ${footer()}
@@ -40,7 +40,7 @@ class LayoutDefault {
     </body>
 </html>
 `;
-  }
+    }
 }
 
 module.exports = LayoutDefault;

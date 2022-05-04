@@ -47,7 +47,7 @@ class Results {
       ${navSecondary()}
       <button aria-controls="results-table" aria-expanded="false" id="js-hide-columns" data-label="Hide events" class="btn-hide-columns">Show events</button>
       <table aria-live="polite" id="results-table" class="table-responsive hide-columns">
-        <caption>Results</caption>
+        <caption>Club Competition Results</caption>
         <thead>
           <th class="club">Club</th>
           ${this.formatPointsColumnHeaders(data)}
