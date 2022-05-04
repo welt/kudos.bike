@@ -50,9 +50,9 @@ class Results {
         <caption>Club Competition Results</caption>
         <thead>
           <tr>
-            <th class="club">Club</th>
+            <th scope="col" class="club">Club</th>
             ${this.formatPointsColumnHeaders(data)}
-            <th class="points">Total Points</th>
+            <th scope="col" class="points">Total Points</th>
           </tr>
         </thead>
         ${this.formatResults(data)}
