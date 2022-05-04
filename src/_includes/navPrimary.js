@@ -1,6 +1,7 @@
 module.exports = function navPrimary() {
-  return `
+    return `
     <header id="header-primary" class="header-primary">
+        <a href="#main-content" class="sr-only">Skip to main content</a> 
         <nav class="nav-primary">
             <a href="/">Home</a>
             <a href="/series-rules/">Rules</a>
