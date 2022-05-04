@@ -44,10 +44,10 @@ class Results {
         <caption>Women's Competition Results</caption>
         <thead>
           <tr>
-           <th class="name">Name</th>
-           <th class="club">Club</th>
+           <th scope="col" class="name">Name</th>
+           <th scope="col" class="club">Club</th>
            ${this.formatPointsColumnHeaders(data)}
-           <th class="points">Total Points</th>
+           <th scope="col" class="points">Total Points</th>
           </tr>
         </thead>
         ${this.formatResults(data)}
