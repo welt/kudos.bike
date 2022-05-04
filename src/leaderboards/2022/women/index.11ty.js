@@ -39,7 +39,7 @@ class Results {
   render(data) {
     return `
       ${navSecondary()}
-      <button aria-controls="results-table" aria-expanded="false" id="js-hide-columns" data-label="Hide events" class="btn-hide-columns">Show events</button>
+      <button aria-controls="results-table" aria-expanded="false" id="js-hide-columns" data-label="Hide events" class="btn-hide-columns" type="button">Show events</button>
       <table aria-live="polite" id="results-table" class="table-responsive hide-columns">
         <caption>Women's Competition Results</caption>
         <thead>
