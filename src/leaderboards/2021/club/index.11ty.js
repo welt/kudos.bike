@@ -49,9 +49,10 @@ class Results {
       <table aria-live="polite" id="results-table" class="table-responsive hide-columns">
         <caption>Results</caption>
         <thead>
-          <th class="club">Club</th>
-          ${this.formatPointsColumnHeaders(data)}
-          <th class="points">Total Points</th>
+          <tr>
+            <th class="club">Club</th>
+           ${this.formatPointsColumnHeaders(data)}
+           <th class="points">Total Points</th>
           </tr>
         </thead>
         ${this.formatResults(data)}

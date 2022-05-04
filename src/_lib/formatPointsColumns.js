@@ -17,7 +17,7 @@ module.exports = {
           .replace('Event-', '')
           .replace('cancelled', '\u2014');
         if (th) {
-          columns.push(`<th class="points js-cols">${label}</th>`);
+          columns.push(`<th scope="col" class="points js-cols">${label}</th>`);
         } else {
           columns.push(`<td data-label="Event ${label}" class="points js-cols">${value}</td>`);
         }
