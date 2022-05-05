@@ -2,6 +2,7 @@
   for = "/*"
   [headers.values]
     X-Establishment = "H"
+    Permissions-Policy = "interest-cohort=()"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
