@@ -3,7 +3,6 @@
   [headers.values]
     X-Establishment = "H"
     Permissions-Policy = "interest-cohort=()"
-    Content-Security-Policy = "default-src 'self';"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
