@@ -1,7 +1,7 @@
 {
     "results": [
         {
-            "Firstname": "Tracy ",
+            "Firstname": "Tracy",
             "Lastname": "Gregory",
             "Club": "Buxton CC/Sett Valley Cycles",
             "Event-1": "40",
@@ -19,7 +19,7 @@
             "TotalPoints": "116"
         },
         {
-            "Firstname": "Lucy ",
+            "Firstname": "Lucy",
             "Lastname": "Rogers",
             "Club": "Congleton CC",
             "Event-1": "40",
@@ -55,7 +55,7 @@
             "TotalPoints": "80"
         },
         {
-            "Firstname": "Lynsey ",
+            "Firstname": "Lynsey",
             "Lastname": "Astles",
             "Club": "Congleton CC",
             "Event-1": "38",
@@ -73,8 +73,8 @@
             "TotalPoints": "77"
         },
         {
-            "Firstname": "Sarah  ",
-            "Lastname": "Riley ",
+            "Firstname": "Sarah ",
+            "Lastname": "Riley",
             "Club": "Bury Clarion CC",
             "Event-1": "40",
             "Event-2": "0",
@@ -91,7 +91,7 @@
             "TotalPoints": "40"
         },
         {
-            "Firstname": "Anna ",
+            "Firstname": "Anna",
             "Lastname": "Weaver",
             "Club": "Team Kirkley Cycles",
             "Event-1": "40",
@@ -109,9 +109,9 @@
             "TotalPoints": "40"
         },
         {
-            "Firstname": "Lilja ",
+            "Firstname": "Lilja",
             "Lastname": "Raine",
-            "Club": "JRC Interflon Race Team ",
+            "Club": "JRC Interflon Race Team",
             "Event-1": "40",
             "Event-2": "0",
             "Event-3": "0",
@@ -127,9 +127,9 @@
             "TotalPoints": "40"
         },
         {
-            "Firstname": "Eve ",
+            "Firstname": "Eve",
             "Lastname": "Davies-Heywood",
-            "Club": "Innovation Racing ",
+            "Club": "Innovation Racing",
             "Event-1": "40",
             "Event-2": "0",
             "Event-3": "0",
@@ -183,7 +183,7 @@
         {
             "Firstname": "Amy",
             "Lastname": "Loftus",
-            "Club": "JRC Interflon Race Team ",
+            "Club": "JRC Interflon Race Team",
             "Event-1": "0",
             "Event-2": "0",
             "Event-3": "40",
@@ -235,7 +235,7 @@
             "TotalPoints": "40"
         },
         {
-            "Firstname": "Katherine ",
+            "Firstname": "Katherine",
             "Lastname": "Swithenbank",
             "Club": "Bury Clarion CC",
             "Event-1": "39",
@@ -254,7 +254,7 @@
         },
         {
             "Firstname": "Michelle",
-            "Lastname": " Fairclough ",
+            "Lastname": " Fairclough",
             "Club": "Salford Cycling Club",
             "Event-1": "39",
             "Event-2": "0",
