@@ -165,7 +165,8 @@
     "Distance": "hill climb",
     "ClosingDate": "2022-09-06T23:59:00+0000",
     "Price": "13.00",
-    "EventDetails": "https://www.cyclingtimetrials.org.uk/race-details/23876"
+    "EventDetails": "https://www.cyclingtimetrials.org.uk/race-details/23876",
+    "Cancelled": true
   },
   {
     "id": 15,
@@ -177,7 +178,8 @@
     "Distance": "hill climb",
     "ClosingDate": "2022-09-06T23:59:00+0000",
     "Price": "13.00",
-    "EventDetails": "https://www.cyclingtimetrials.org.uk/race-details/23877"
+    "EventDetails": "https://www.cyclingtimetrials.org.uk/race-details/23877",
+    "Cancelled": true
   },
   {
     "id": 16,
@@ -206,12 +208,12 @@
   {
     "id": 18,
     "Event": "Event 12",
-    "Date": "2022-10-02T10:00:00+0100",
+    "Date": "2022-10-01T10:00:00+0100",
     "Name": "Glossop Kinder Velo Hill Climb",
     "Course": "J9/5",
     "CourseInfo": "Glossop to Snake Pass",
     "Distance": "hill climb",
-    "ClosingDate": "2022-10-20T23:59:00+0000",
+    "ClosingDate": "2022-09-20T22:59:00+0000",
     "Price": "11.00",
     "EventDetails": "https://www.cyclingtimetrials.org.uk/race-details/23880"
   }
