@@ -13,9 +13,9 @@ module.exports = {
     const columns = [];
     for (const [key, value] of Object.entries(obj)) {
       if (key.includes('Event-')) {
-        const label = key
-          .replace('Event-', '')
-          .replace('cancelled', '\u2014');
+        let label = key
+          .replace('Event-', '');
+        label = label.includes('cancelled') ? '\u2014' : label;
         if (th) {
           columns.push(`<th scope="col" class="points js-cols">${label}</th>`);
         } else {
