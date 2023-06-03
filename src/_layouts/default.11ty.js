@@ -6,6 +6,7 @@ const navPrimary = require('../_includes/navPrimary');
 const footer = require('../_includes/footer');
 const header = require('../_includes/header');
 const openGraph = require('../_includes/openGraph');
+const canonical = require('../_includes/canonical');
 
 class LayoutDefault {
   render(data) {
@@ -20,6 +21,7 @@ class LayoutDefault {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color-scheme" content="dark light">
         <meta name="description" content="${data.metaDescription}">
+        ${canonical(data)}
         ${openGraph(data)}
         <script>
             document.documentElement.className = document.documentElement.className.replace('no-js','js');
