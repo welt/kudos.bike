@@ -52,6 +52,9 @@ export default class ToggleButton extends HTMLElement {
     if (!this.hasAttribute('role')) {
       this.setAttribute('role', 'checkbox');
     }
+    if (!this.hasAttribute('aria-checked')) {
+      this.setAttribute('aria-checked', this.checked);
+    }
     if (!this.hasAttribute('tabindex')) {
       this.setAttribute('tabindex', 0);
     }
@@ -68,8 +71,10 @@ export default class ToggleButton extends HTMLElement {
     const isChecked = Boolean(value);
     if (isChecked) {
       this.setAttribute('checked', '');
+      this.setAttribute('aria-checked', true);
     } else {
       this.removeAttribute('checked');
+      this.setAttribute('aria-checked', false);
     }
   }
 

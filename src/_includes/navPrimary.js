@@ -1,5 +1,5 @@
 module.exports = function navPrimary() {
-    return `
+  return `
     <header id="header-primary" class="header-primary">
         <a href="#main-content" class="sr-only">Skip to main content</a> 
         <nav class="nav-primary">
@@ -9,7 +9,7 @@ module.exports = function navPrimary() {
             <a href="/sponsors/">Sponsors</a>
             <a href="#contact">Contact</a>
         </nav>
-        <x-toggle aria-label="Toggle dark mode" role="checkbox" tabindex="0"></x-toggle>
+        <x-toggle aria-label="Toggle dark mode" role="checkbox" aria-checked="false" tabindex="0"></x-toggle>
     </header>
     `;
 };
