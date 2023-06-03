@@ -8,8 +8,8 @@ const header = require('../_includes/header');
 const openGraph = require('../_includes/openGraph');
 
 class LayoutDefault {
-    render(data) {
-        return `
+  render(data) {
+    return `
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
@@ -40,7 +40,7 @@ class LayoutDefault {
     </body>
 </html>
 `;
-    }
+  }
 }
 
 module.exports = LayoutDefault;

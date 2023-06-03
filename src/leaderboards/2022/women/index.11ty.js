@@ -25,9 +25,9 @@ class Results {
 
   formatResults(obj) {
     const { results } = obj;
-    return results.map((result, index) => `
+    return results.map((result) => `
       <tr>
-        <td data-label="Name" class="name" data-ordinal="${ordinalSuffixOf(index + 1)}">${result.Firstname} ${result.Lastname}</td>
+        <td data-label="Name" class="name" data-ordinal="${ordinalSuffixOf(result.Position)}">${result.Firstname} ${result.Lastname}</td>
         <td data-label="Club" class="club">${result.Club}</td>
         ${this.formatPointsColumns(result)}
         <td data-label="Total Points" class="total-points">${result.TotalPoints}</td>
@@ -52,6 +52,7 @@ class Results {
         </thead>
         ${this.formatResults(data)}
       </table>
+      <dl><dt><b>—</b></dt><dd>Event cancelled</dd></dl>
     `;
   }
 }

@@ -1,7 +1,6 @@
 /* eslint-disable class-methods-use-this */
 const eventInfo = require('./_includes/eventInfo');
 const navSecondary = require('./_includes/navSecondary');
-// const menuResults = require('./_includes/menuResults');
 const sortBy = require('./_lib/sortBy');
 
 class Home {
@@ -22,9 +21,21 @@ class Home {
   render(data) {
     const { events } = data;
     return `
+      <h2> Congratulations to all the prize winners, they are as follows;</h2>
+      <h3>Women</h3>
+      <ol>
+        <li>1st Tracey Gregory</li>
+        <li>2nd Liz Batt</li>
+        <li>3rd Gail Lowe</li>
+      </ol>
+      <h3>Men</h3>
+      <ol>
+        <li>1st Alistair Ribbands</li>
+        <li>2nd Rueben Corlett</li>
+        <li>3rd Jimmy Froggatt</li>
+      </ol>
+      <h3>Team prize goes to Congleton CC.</h3>
       ${navSecondary()}
-      <h3>Events calendar</h3>
-      ${this.constructor.getRaces(events)}
     `;
   }
 }

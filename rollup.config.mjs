@@ -1,12 +1,13 @@
 // rollup.config.js
 
 import { babel } from '@rollup/plugin-babel';
+import { createRequire } from 'module';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
-import { terser } from 'rollup-plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
-import { defaultShouldMinify } from 'minify-html-literals';
-import minifyHTML from 'rollup-plugin-minify-html-literals';
-import outputManifest from 'rollup-plugin-output-manifest';
+import terser from '@rollup/plugin-terser';
+
+const require = createRequire(import.meta.url);
+const outputManifest = require('rollup-plugin-output-manifest').default;
 
 const devMode = (process.env.NODE_ENV !== 'production');
 const manifestOpts = {
@@ -23,19 +24,6 @@ export default [
   {
     input: './src/js/components.js',
     plugins: [
-      devMode ? null : minifyHTML({
-        options: {
-          shouldMinify(template) {
-            return (
-              defaultShouldMinify(template)
-              || template.parts.some((part) => (
-                part.text.includes('<style')
-                  || part.text.includes('<template')
-              ))
-            );
-          },
-        },
-      }),
       nodeResolve(),
       commonjs(),
       devMode ? noop() : outputManifest(manifestOpts),
