@@ -52,6 +52,7 @@ class Results {
         </thead>
         ${this.formatResults(data)}
       </table>
+      <dl><dt><b>—</b></dt><dd>Event cancelled</dd></dl>
     `;
   }
 }

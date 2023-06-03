@@ -1,11 +1,23 @@
 ul>li {
-    margin-bottom: .5rem;
+  margin-bottom: .5rem;
 }
 ol {
   list-style-type: disc;
 }
 ol>li {
-  margin-bottom: .5rem;
   height: 2.5rem;
   line-height: 2.5rem;
+  margin-bottom: .5rem;
+}
+dl {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+dt::after {
+  content: " : ";
+}
+dd {
+  font-style: italic;
+  margin-left: 1rem;
 }
