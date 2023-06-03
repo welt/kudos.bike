@@ -3,6 +3,7 @@
 const formatPointsColumns = require('../../../_lib/formatPointsColumns');
 const navSecondary = require('../../../_includes/navSecondary');
 const ordinalSuffixOf = require('../../../_lib/ordinalSuffixOf');
+const tableKey = require('../../../_includes/tableKey');
 
 class Results {
   constructor() {
@@ -52,7 +53,7 @@ class Results {
         </thead>
         ${this.formatResults(data)}
       </table>
-      <dl><dt><b>—</b></dt><dd>Event cancelled</dd></dl>
+      ${tableKey()}
     `;
   }
 }
