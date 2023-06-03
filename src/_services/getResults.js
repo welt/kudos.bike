@@ -2,9 +2,6 @@
 /**
  * Fetches Race data from API.
  */
-
-const fetch = require('node-fetch-commonjs');
-
 const host = process.env.API_HOST;
 
 module.exports = async function (id) {
