@@ -18,22 +18,27 @@ class Home {
       && events.sort(sortBy('id', 'ASC')).map(eventInfo).join('\n');
   }
 
-  render(data) {
-    const { events } = data;
+  render() {
     return `
       <h2> Congratulations to all the prize winners, they are as follows;</h2>
-      <h3>Women</h3>
-      <ol>
-        <li>1st Tracey Gregory</li>
-        <li>2nd Liz Batt</li>
-        <li>3rd Gail Lowe</li>
-      </ol>
-      <h3>Men</h3>
-      <ol>
-        <li>1st Alistair Ribbands</li>
-        <li>2nd Rueben Corlett</li>
-        <li>3rd Jimmy Froggatt</li>
-      </ol>
+      <div class="grid-results">
+        <div class="grid-results__item">
+          <h3>Women</h3>
+          <ol>
+            <li>1st Tracey Gregory</li>
+            <li>2nd Liz Batt</li>
+            <li>3rd Gail Lowe</li>
+          </ol>
+        </div>
+        <div class="grid-results__item">
+          <h3>Men</h3>
+          <ol>
+            <li>1st Alistair Ribbands</li>
+            <li>2nd Rueben Corlett</li>
+            <li>3rd Jimmy Froggatt</li>
+          </ol>
+        </div>
+      </div>
       <h3>Team prize goes to Congleton CC.</h3>
       ${navSecondary()}
     `;
