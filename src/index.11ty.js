@@ -20,7 +20,7 @@ class Home {
 
   render() {
     return `
-      <h2> Congratulations to all the prize winners, they are as follows;</h2>
+      <h2> Congratulations to all the prize winners,<br>they are as follows:</h2>
       <div class="grid-results">
         <div class="grid-results__item">
           <h3>Women</h3>

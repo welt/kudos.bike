@@ -9,7 +9,7 @@ module.exports = function navPrimary() {
             <a href="/sponsors/">Sponsors</a>
             <a href="#contact">Contact</a>
         </nav>
-        <x-toggle aria-label="Toggle dark mode" role="checkbox" aria-checked="false" tabindex="0"></x-toggle>
+        <x-toggle aria-label="Toggle dark mode" title="Toggle dark mode" role="checkbox" aria-checked="false" tabindex="0"></x-toggle>
     </header>
     `;
 };
