@@ -1,8 +1,10 @@
 .grid-results {
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit,minmax(18rem,max-content));
+  grid-template-columns: repeat(auto-fit,minmax(12rem,max-content));
   justify-content: flex-start;
   margin-top: 1rem;
   width: 100%;
+  @include respond('large') {
+    grid-gap: 2rem;
+  }
 }
