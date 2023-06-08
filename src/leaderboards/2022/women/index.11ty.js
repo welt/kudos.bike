@@ -1,6 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable class-methods-use-this */
 const formatPointsColumns = require('../../../_lib/formatPointsColumns');
+const isTied = require('../../../_lib/isTied');
 const navSecondary = require('../../../_includes/navSecondary');
 const ordinalSuffixOf = require('../../../_lib/ordinalSuffixOf');
 const tableKey = require('../../../_includes/tableKey');
@@ -26,9 +27,9 @@ class Results {
 
   formatResults(obj) {
     const { results } = obj;
-    return results.map((result) => `
+    return results.map((result, index, arr) => `
       <tr>
-        <td data-label="Name" class="name" data-ordinal="${ordinalSuffixOf(result.Position)}">${result.Firstname} ${result.Lastname}</td>
+        <td data-label="Name" class="name" data-ordinal="${ordinalSuffixOf(result.Position)}${isTied(result.Position, index, arr)}">${result.Firstname} ${result.Lastname}</td>
         <td data-label="Club" class="club">${result.Club}</td>
         ${this.formatPointsColumns(result)}
         <td data-label="Total Points" class="total-points">${result.TotalPoints}</td>
