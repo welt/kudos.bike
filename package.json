@@ -20,7 +20,7 @@
   "devDependencies": {
     "@netlify/plugin-sitemap": "^0.8.1",
     "csvtojson": "^2.0.10",
-    "eslint": "^8.43.0",
+    "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
     "netlify-plugin-html-validate": "^1.1.1",
@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
@@ -46,8 +46,8 @@
     "postcss-nested": "^6.0.1",
     "postcss-scss": "^4.0.6",
     "postcss-sort-media-queries": "^5.2.0",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.25",
     "rollup-plugin-output-manifest": "^2.0.0",
-    "rollup": "^3.25.1"
+    "rollup": "^3.26.2"
   }
 }
