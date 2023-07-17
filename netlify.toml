@@ -3,6 +3,8 @@
   [headers.values]
     X-Establishment = "H"
     Permissions-Policy = "interest-cohort=()"
+    x-frame-options = "DENY"
+    x-xss-protection = "1; mode=block"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
