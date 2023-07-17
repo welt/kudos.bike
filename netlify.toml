@@ -5,6 +5,7 @@
     Permissions-Policy = "interest-cohort=()"
     x-frame-options = "DENY"
     x-xss-protection = "1; mode=block"
+    function = "strip-non-html-headers"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
