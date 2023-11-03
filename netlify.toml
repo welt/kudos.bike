@@ -11,8 +11,7 @@
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs.settings]
     locale = "en"
-  [[plugins.inputs.audits]]
-    # Only audit production site:
+  [plugins.inputs.audits]
     url = "https://kudos.bike"
 
 [[plugins]]
