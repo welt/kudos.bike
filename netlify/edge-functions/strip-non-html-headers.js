@@ -9,7 +9,9 @@ export default async (_request, context) => {
   const response = await context.next();
   const contentType = response.headers.get('content-type');
 
-  if (!contentType || contentType.startsWith('text/html')) {
+  if (!contentType
+      || contentType.startsWith('text/html')
+      || contentType.startsWith('text/plain')) {
     return response;
   }
 
@@ -31,7 +33,7 @@ export default async (_request, context) => {
       return;
     }
 
-    if (htmlOnlyHeaders.includes(key)) {
+    if (htmlOnlyHeaders.includes(key.toLowerCase())) {
       object.delete(key);
     }
   });
