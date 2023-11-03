@@ -26,3 +26,9 @@
   [plugins.inputs]
     ext = "html"
     config = ".htmlvalidate.json"
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 301
+  force = false
