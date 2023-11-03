@@ -90,7 +90,7 @@ lib-cov
 lcov.info
 pids
 logs
-node_modules
+**/node_modules/**
 .node_history
 
 ############################
