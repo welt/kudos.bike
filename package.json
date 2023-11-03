@@ -18,6 +18,7 @@
   "author": "",
   "license": "CC-BY-2.0",
   "devDependencies": {
+    "@netlify/plugin-lighthouse": "^5.0.0",
     "@netlify/plugin-sitemap": "^0.8.1",
     "csvtojson": "^2.0.10",
     "eslint": "^8.52.0",
@@ -37,6 +38,7 @@
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
     "dotenv": "^16.3.1",
+    "postcss": "^8.4.31",
     "postcss-advanced-variables": "^3.0.1",
     "postcss-assets": "^6.0.0",
     "postcss-cli": "^10.1.0",
@@ -46,8 +48,7 @@
     "postcss-nested": "^6.0.1",
     "postcss-scss": "^4.0.9",
     "postcss-sort-media-queries": "^5.2.0",
-    "postcss": "^8.4.31",
-    "rollup-plugin-output-manifest": "^2.0.0",
-    "rollup": "^4.2.0"
+    "rollup": "^4.2.0",
+    "rollup-plugin-output-manifest": "^2.0.0"
   }
 }

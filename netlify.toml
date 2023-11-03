@@ -8,6 +8,11 @@
     function = "strip-non-html-headers"
 
 [[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  [plugins.inputs.settings]
+    locale = "de"
+
+[[plugins]]
   package = "@netlify/plugin-sitemap"
   [plugins.inputs]
     buildDir = "_site"
