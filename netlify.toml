@@ -3,8 +3,8 @@
   [headers.values]
     X-Establishment = "H"
     Permissions-Policy = "interest-cohort=()"
-    x-frame-options = "DENY"
-    x-xss-protection = "1; mode=block"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
     function = "strip-non-html-headers"
 
 [[plugins]]
