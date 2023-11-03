@@ -10,7 +10,7 @@
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs.settings]
-    locale = "de"
+    locale = "en"
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
@@ -26,9 +26,3 @@
   [plugins.inputs]
     ext = "html"
     config = ".htmlvalidate.json"
-
-[[redirects]]
-  from = "/robots.txt"
-  to = "/robots.txt"
-  status = 301
-  force = false
