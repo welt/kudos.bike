@@ -23,6 +23,7 @@ class LayoutDefault {
         <meta name="description" content="${data.metaDescription}">
         ${canonical(data)}
         ${openGraph(data)}
+        <script type="module" src="/js/${data.meta.env === 'production' ? data.manifest['components.js'] : 'components.esm.js'}" async></script>
         <script>
             document.documentElement.className = document.documentElement.className.replace('no-js','js');
             var currentMode = localStorage.getItem('mode');
@@ -36,7 +37,6 @@ class LayoutDefault {
         ${data.content}
         </main>
         ${footer()}
-        <script type="module" src="/js/${data.meta.env === 'production' ? data.manifest['components.js'] : 'components.esm.js'}" async></script>
         <script type="module" src="/js/${data.meta.env === 'production' ? data.manifest['main.js'] : 'bundle.esm.js'}" async></script>
         <script nomodule src="/js/${data.meta.env === 'production' ? data.manifest['main.iife.js'] : 'bundle.iife.js'}" defer></script>
     </body>
