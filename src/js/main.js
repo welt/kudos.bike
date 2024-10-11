@@ -1,7 +1,6 @@
-/* eslint-disable import/extensions */
-import CalendarItem from './_modules/calendarItem';
-import ToggleColumns from './_modules/toggleColumns';
-import ToggleDarkMode from './_modules/toggleDarkMode';
+import CalendarItem from "./_modules/calendarItem";
+import ToggleColumns from "./_modules/toggleColumns";
+import ToggleDarkMode from "./_modules/toggleDarkMode";
 
 const calendarItem = new CalendarItem();
 calendarItem.init();

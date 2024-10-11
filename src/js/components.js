@@ -1,2 +1,1 @@
-/* eslint-disable import/extensions */
-import './_components/index.js';
+import "./_components/index.js";
