@@ -1,3 +1,6 @@
-import ToggleButton from './toggleButton';
+/*
+ * Project custom elements entry point.
+ */
+import ToggleButton from "./toggleButton";
 
-window.customElements.define('x-toggle', ToggleButton);
+window.customElements.define("x-toggle", ToggleButton);

@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 module.exports = {
   /**
    * Trait for 11ty JS templates.
@@ -12,17 +11,18 @@ module.exports = {
   formatPointsColumns(obj, th = false) {
     const columns = [];
     for (const [key, value] of Object.entries(obj)) {
-      if (key.includes('Event-')) {
-        let label = key
-          .replace('Event-', '');
-        label = label.includes('cancelled') ? '\u2014' : label;
+      if (key.includes("Event-")) {
+        let label = key.replace("Event-", "");
+        label = label.includes("cancelled") ? "\u2014" : label;
         if (th) {
           columns.push(`<th scope="col" class="points js-cols">${label}</th>`);
         } else {
-          columns.push(`<td data-label="Event ${label}" class="points js-cols">${value}</td>`);
+          columns.push(
+            `<td data-label="Event ${label}" class="points js-cols">${value}</td>`,
+          );
         }
       }
     }
-    return columns.join('\n');
+    return columns.join("\n");
   },
 };

@@ -1,9 +1,11 @@
-/* eslint-disable no-underscore-dangle */
+/*
+ * ToggleButton
+ */
 const KEYCODE = {
   SPACE: 32,
 };
 
-const template = document.createElement('template');
+const template = document.createElement("template");
 template.innerHTML = `
     <style>
       :host {
@@ -27,7 +29,7 @@ template.innerHTML = `
         height: 14px;
         left: 3px;
         position: absolute;
-        top: 3px; 
+        top: 3px;
         transition: all 300ms cubic-bezier(0.83, 0, 0.17, 1);
         width: 14px;
     }
@@ -39,75 +41,75 @@ template.innerHTML = `
 
 export default class ToggleButton extends HTMLElement {
   static get observedAttributes() {
-    return ['checked', 'disabled'];
+    return ["checked", "disabled"];
   }
 
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
   connectedCallback() {
-    if (!this.hasAttribute('role')) {
-      this.setAttribute('role', 'checkbox');
+    if (!this.hasAttribute("role")) {
+      this.setAttribute("role", "checkbox");
     }
-    if (!this.hasAttribute('aria-checked')) {
-      this.setAttribute('aria-checked', this.checked);
+    if (!this.hasAttribute("aria-checked")) {
+      this.setAttribute("aria-checked", this.checked);
     }
-    if (!this.hasAttribute('tabindex')) {
-      this.setAttribute('tabindex', 0);
+    if (!this.hasAttribute("tabindex")) {
+      this.setAttribute("tabindex", 0);
     }
-    this.addEventListener('keyup', this.onKeyUp);
-    this.addEventListener('click', this.onClick);
+    this.addEventListener("keyup", this.onKeyUp);
+    this.addEventListener("click", this.onClick);
   }
 
   disconnectedCallback() {
-    this.removeEventListener('keyup', this.onKeyUp);
-    this.removeEventListener('click', this.onClick);
+    this.removeEventListener("keyup", this.onKeyUp);
+    this.removeEventListener("click", this.onClick);
   }
 
   set checked(value) {
     const isChecked = Boolean(value);
     if (isChecked) {
-      this.setAttribute('checked', '');
-      this.setAttribute('aria-checked', true);
+      this.setAttribute("checked", "");
+      this.setAttribute("aria-checked", true);
     } else {
-      this.removeAttribute('checked');
-      this.setAttribute('aria-checked', false);
+      this.removeAttribute("checked");
+      this.setAttribute("aria-checked", false);
     }
   }
 
   get checked() {
-    return this.hasAttribute('checked');
+    return this.hasAttribute("checked");
   }
 
   set disabled(value) {
     const isDisabled = Boolean(value);
     if (isDisabled) {
-      this.setAttribute('disabled', '');
+      this.setAttribute("disabled", "");
     } else {
-      this.removeAttribute('disabled');
+      this.removeAttribute("disabled");
     }
   }
 
   get disabled() {
-    return this.hasAttribute('disabled');
+    return this.hasAttribute("disabled");
   }
 
   attributeChangedCallback(name, _oldValue, newValue) {
     const hasValue = newValue !== null;
     switch (name) {
-      case 'checked':
-        this.setAttribute('aria-checked', hasValue);
+      case "checked":
+        this.setAttribute("aria-checked", hasValue);
         break;
-      case 'disabled':
-        this.setAttribute('aria-disabled', hasValue);
+      case "disabled":
+        this.setAttribute("aria-disabled", hasValue);
         if (hasValue) {
-          this.removeAttribute('tabindex');
+          this.removeAttribute("tabindex");
           this.blur();
         } else {
-          this.setAttribute('tabindex', '0');
+          this.setAttribute("tabindex", "0");
         }
         break;
       default:
@@ -138,11 +140,13 @@ export default class ToggleButton extends HTMLElement {
       return;
     }
     this.checked = !this.checked;
-    this.dispatchEvent(new CustomEvent('toggle', {
-      detail: {
-        checked: this.checked,
-      },
-      bubbles: true,
-    }));
+    this.dispatchEvent(
+      new CustomEvent("toggle", {
+        detail: {
+          checked: this.checked,
+        },
+        bubbles: true,
+      }),
+    );
   }
 }

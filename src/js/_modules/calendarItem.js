@@ -1,14 +1,13 @@
 /**
  * Client class to build & append calendar links.
  */
-import makeUrls from './lib/addToCalendar';
-import renderCalendarLinks from './lib/renderCalendarLinks';
+import makeUrls from "./lib/addToCalendar";
+import renderCalendarLinks from "./lib/renderCalendarLinks";
 
 /**
  * Element to append calendar link children to.
  */
-const containerElement = '[data-calendar-item]';
-
+const containerElement = "[data-calendar-item]";
 export default class CalendarItem {
   constructor() {
     this.items = [];

@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 /**
  * Fetches Race data from API.
  */
@@ -7,7 +6,7 @@ const host = process.env.API_HOST;
 module.exports = async function (id) {
   try {
     const response = await fetch(`${host}/api/results/race/${id}`, {
-      method: 'GET',
+      method: "GET",
       headers: {},
     });
     if (!response.ok) {
