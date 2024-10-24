@@ -3,7 +3,7 @@
  */
 const host = process.env.API_HOST;
 
-module.exports = async function (id) {
+export default async function (id) {
   try {
     const response = await fetch(`${host}/api/results/race/${id}`, {
       method: "GET",
@@ -18,4 +18,4 @@ module.exports = async function (id) {
   } catch (error) {
     return { error };
   }
-};
+}

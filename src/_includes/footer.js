@@ -1,4 +1,4 @@
-module.exports = function footer() {
+export default function footer() {
   return `
         <footer>
             <p>Supported by</p>
@@ -9,4 +9,4 @@ module.exports = function footer() {
             <p id="contact">For more information, contact <wbr><a href="mailto:martin@kudos.bike?Subject=Kudos%20TT%20Series">Martin&nbsp;Harney</a>.</p>
         </footer>
     `;
-};
+}

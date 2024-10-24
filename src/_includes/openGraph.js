@@ -1,4 +1,4 @@
-module.exports = function openGraph(data) {
+export default function openGraph(data) {
   return `
     <meta property="og:title" content="${data.title}">
     <meta property="og:url" content="${data.meta.canonical}${data.page.url}">
@@ -7,4 +7,4 @@ module.exports = function openGraph(data) {
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="${data.meta.siteName}">
 `;
-};
+}

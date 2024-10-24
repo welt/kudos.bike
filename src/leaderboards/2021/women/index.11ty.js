@@ -1,19 +1,13 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable class-methods-use-this */
-const formatPointsColumns = require('../../../_lib/formatPointsColumns');
-const navSecondary = require('../../../_includes/navSecondary');
-const ordinalSuffixOf = require('../../../_lib/ordinalSuffixOf');
+import Leaderboard from "../../../_includes/leaderboard.js";
+import navSecondary from "../../../_includes/navSecondary.js";
+import ordinalSuffixOf from "../../../_lib/ordinalSuffixOf.js";
 
-class Results {
-  constructor() {
-    Object.assign(this, formatPointsColumns);
-  }
-
+export default class Results extends Leaderboard {
   get data() {
     return {
-      title: 'Kudos TT Series, 2021 women\'s leaderboard',
-      metaDescription: 'Kudos Time Trial Series, 2021 women\'s leaderboard',
-      styles: 'hide-bg',
+      title: "Kudos TT Series, 2021 women's leaderboard",
+      metaDescription: "Kudos Time Trial Series, 2021 women's leaderboard",
+      styles: "hide-bg",
     };
   }
 
@@ -25,15 +19,18 @@ class Results {
 
   formatResults(obj) {
     const { results } = obj;
-    return results.map((result, index) => `
+    return results
+      .map(
+        (result, index) => `
       <tr>
         <td data-label="Name" class="name" data-ordinal="${ordinalSuffixOf(index + 1)}">${result.Firstname} ${result.Lastname}</td>
         <td data-label="Club" class="club">${result.Club}</td>
         ${this.formatPointsColumns(result)}
         <td data-label="Total Points" class="total-points">${result.TotalPoints}</td>
       </tr>
-    `)
-      .join('\n');
+    `,
+      )
+      .join("\n");
   }
 
   render(data) {
@@ -55,5 +52,3 @@ class Results {
     `;
   }
 }
-
-module.exports = Results;

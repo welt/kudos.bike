@@ -1,21 +1,26 @@
-/* eslint-disable class-methods-use-this */
-const eventInfo = require('./_includes/eventInfo');
-const navSecondary = require('./_includes/navSecondary');
-const sortBy = require('./_lib/sortBy');
+/**
+ * Homepage template.
+ */
+import eventInfo from "./_includes/eventInfo.js";
+import navSecondary from "./_includes/navSecondary.js";
+import sortBy from "./_lib/sortBy.js";
 
-class Home {
+export default class Home {
   get data() {
     return {
-      layout: 'default',
-      title: 'Kudos Time Trial Series 2022',
-      metaDescription: 'Kudos Time Trial Series: supported by Bioracer (UK) and Cycle-Space Disley. Team and individual competitions, open to riders outside Manchester CTT region.',
-      styles: 'hide-bg',
+      layout: "default",
+      title: "Kudos Time Trial Series 2022",
+      metaDescription:
+        "Kudos Time Trial Series: supported by Bioracer (UK) and Cycle-Space Disley. Team and individual competitions, open to riders outside Manchester CTT region.",
+      styles: "hide-bg",
     };
   }
 
   static getRaces(events) {
-    return Array.isArray(events)
-      && events.sort(sortBy('id', 'ASC')).map(eventInfo).join('\n');
+    return (
+      Array.isArray(events) &&
+      events.sort(sortBy("id", "ASC")).map(eventInfo).join("\n")
+    );
   }
 
   render() {
@@ -44,5 +49,3 @@ class Home {
     `;
   }
 }
-
-module.exports = Home;

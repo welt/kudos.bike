@@ -1,6 +1,8 @@
-require("dotenv").config();
+import dotenv from "dotenv";
 
-module.exports = {
+dotenv.config();
+
+export default {
   canonical: process.env.CANONICAL,
   env: process.env.ELEVENTY_ENV,
   siteName: "Kudos Time Trial Series",

@@ -1,6 +1,8 @@
-module.exports = {
+/**
+ * Base class for Leaderboard template components.
+ */
+export default class Leaderboard {
   /**
-   * Trait for 11ty JS templates.
    * Loops through event key-value pairs in a result object to give event
    * result columns special formatting.
    *
@@ -24,5 +26,5 @@ module.exports = {
       }
     }
     return columns.join("\n");
-  },
-};
+  }
+}
