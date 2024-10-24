@@ -3,6 +3,10 @@ import pluginJs from "@eslint/js";
 
 export default [
   {
+    env: {
+      "jest/globals": true,
+    },
+    plugins: ["jest"],
     languageOptions: {
       globals: {
         ...globals.browser,
