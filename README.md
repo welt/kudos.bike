@@ -4,11 +4,13 @@
 
 ## Website for Bioracer Kudos TT series 2022
 
-- [Eleventy](https://www.11ty.dev/)
+- [Eleventy v3](https://www.11ty.dev/)
 
 - [Rollup](https://www.rollupjs.org/guide/en/)
 
-- [PostCSS](https://postcss.org/)
+- [PostCSS w. ESM config](https://postcss.org/)
+
+- [Jest w. ESM config](https://jestjs.io/)
 
 ---
 
