@@ -1,21 +1,15 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable class-methods-use-this */
-const formatPointsColumns = require('../../../_lib/formatPointsColumns');
-const isTied = require('../../../_lib/isTied');
-const navSecondary = require('../../../_includes/navSecondary');
-const ordinalSuffixOf = require('../../../_lib/ordinalSuffixOf');
-const tableKey = require('../../../_includes/tableKey');
+import Leaderboard from "../../../_includes/leaderboard.js";
+import isTied from "../../../_lib/isTied.js";
+import navSecondary from "../../../_includes/navSecondary.js";
+import ordinalSuffixOf from "../../../_lib/ordinalSuffixOf.js";
+import tableKey from "../../../_includes/tableKey.js";
 
-class Results {
-  constructor() {
-    Object.assign(this, formatPointsColumns);
-  }
-
+export default class Results extends Leaderboard {
   get data() {
     return {
-      title: 'Kudos TT Series, 2021 club leaderboard',
-      metaDescription: 'Kudos Time Trial Series, 2021 club leaderboard',
-      styles: 'hide-bg',
+      title: "Kudos TT Series, 2021 club leaderboard",
+      metaDescription: "Kudos Time Trial Series, 2021 club leaderboard",
+      styles: "hide-bg",
     };
   }
 
@@ -35,14 +29,17 @@ class Results {
   formatResults(obj) {
     const { results } = obj;
     // eslint-disable-next-line no-unused-vars
-    return results.map((result, index, arr) => `
+    return results
+      .map(
+        (result, index, arr) => `
       <tr>
         <td data-label="Club" class="club" data-ordinal="${ordinalSuffixOf(result.Position)}${isTied(result.Position, index, arr)}">${result.Club}</td>
         ${this.formatPointsColumns(result)}
         <td data-label="Total Points" class="total-points">${result.TotalPoints}</td>
       </tr>
-    `)
-      .join('\n');
+    `,
+      )
+      .join("\n");
   }
 
   render(data) {
@@ -64,5 +61,3 @@ class Results {
     `;
   }
 }
-
-module.exports = Results;

@@ -1,4 +1,4 @@
-module.exports = function header() {
+export default function header() {
   return `
   <div class="brand-logo">
     <div>
@@ -12,4 +12,4 @@ module.exports = function header() {
   <h1>Kudos Time Trial Series 2022</h1>
   <h2>Supported by <a href="https://www.bioracer.co.uk/en">Bioracer (UK)</a> <wbr>and <a href="https://www.cycle-space.co.uk/">Cycle-Space Disley</a></h2>
     `;
-};
+}

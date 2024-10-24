@@ -5,8 +5,7 @@
  * @param {string} order - order ASCending or DESCending.
  * @returns {number}
  */
-
-module.exports = function sortBy(prop, order = "ASC") {
+export default function sortBy(prop, order = "ASC") {
   const _order = order === "DESC" ? -1 : 1;
   return (a, b) => {
     if (a[prop] > b[prop]) {
@@ -17,4 +16,4 @@ module.exports = function sortBy(prop, order = "ASC") {
     }
     return 0;
   };
-};
+}

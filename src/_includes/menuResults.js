@@ -1,13 +1,17 @@
-const sortBy = require('../_lib/sortBy');
+import sortBy from "../_lib/sortBy.js";
 
-const makeMenu = (arr) => Array.isArray(arr)
-&& arr.sort(sortBy('id', 'ASC')).map((event) => `
-<li id="race-${event.id}">
+const makeMenu = (arr) =>
+  Array.isArray(arr) &&
+  arr
+    .sort(sortBy("id", "ASC"))
+    .map(
+      (event) => `<li id="race-${event.id}">
   <a href="events/${event.id}/">${event.Name}</a>
-</li>
-`).join('\n');
+</li>`,
+    )
+    .join("\n");
 
-module.exports = function menuResults(events) {
+export default function menuResults(events) {
   return `
     <details title="Show race results">
     <summary><span class="summary">Race results, 2022</span></summary>
@@ -16,4 +20,4 @@ module.exports = function menuResults(events) {
     </ul>
   </details>
   `;
-};
+}

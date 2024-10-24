@@ -1,4 +1,4 @@
-module.exports = function leaderboardMenu() {
+export default function leaderboardMenu() {
   return `
     <nav class="nav-secondary">
         <h3>Overall standings 2022</h3>
@@ -9,4 +9,4 @@ module.exports = function leaderboardMenu() {
         </ul>
     </nav>
       `;
-};
+}

@@ -1,13 +1,13 @@
 /**
  * Default layout template.
  */
-const navPrimary = require("../_includes/navPrimary");
-const footer = require("../_includes/footer");
-const header = require("../_includes/header");
-const openGraph = require("../_includes/openGraph");
-const canonical = require("../_includes/canonical");
+import navPrimary from "../_includes/navPrimary.js";
+import footer from "../_includes/footer.js";
+import header from "../_includes/header.js";
+import openGraph from "../_includes/openGraph.js";
+import canonical from "../_includes/canonical.js";
 
-class LayoutDefault {
+export default class LayoutDefault {
   render(data) {
     return `
 <!DOCTYPE html>
@@ -43,5 +43,3 @@ class LayoutDefault {
 `;
   }
 }
-
-module.exports = LayoutDefault;
