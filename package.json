@@ -50,7 +50,7 @@
     "postcss-color-function": "^4.1.0",
     "postcss-hash": "^3.0.0",
     "postcss-map-get": "^0.3.0",
-    "postcss-nested": "^6.2.0",
+    "postcss-nested": "^7.0.2",
     "postcss-scss": "^4.0.9",
     "postcss-sort-media-queries": "^5.2.0",
     "rollup": "^4.24.4",
