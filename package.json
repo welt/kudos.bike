@@ -1,8 +1,8 @@
 {
-  "name": "mbc-11ty",
+  "name": "kudos.bike",
   "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MBC 11ty website for Kudos TT series 2022",
+  "main": "eleventy.config.js",
   "type": "module",
   "scripts": {
     "html:dev": "ELEVENTY_ENV=dev set DEBUG=Eleventy* & npx @11ty/eleventy --serve",
@@ -17,7 +17,7 @@
     "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest --collectCoverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "welt",
   "license": "CC-BY-2.0",
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
@@ -43,7 +43,7 @@
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
     "dotenv": "^16.4.5",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.49",
     "postcss-advanced-variables": "^5.0.0",
     "postcss-assets": "^6.0.0",
     "postcss-cli": "^11.0.0",
@@ -53,7 +53,7 @@
     "postcss-nested": "^7.0.2",
     "postcss-scss": "^4.0.9",
     "postcss-sort-media-queries": "^5.2.0",
-    "rollup": "^4.24.4",
+    "rollup": "^4.25.0",
     "rollup-plugin-output-manifest": "^2.0.0"
   }
 }
